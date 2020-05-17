@@ -2,63 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb9a0879-7480-4843-a8ab-4a18c281d227" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Practise.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/InterviewBit/strings/JustifyText.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/InterviewBit/strings/JustifyText.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/InterviewBit/strings/LongestCommonPrefic$IsValidNum$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/InterviewBit/strings/LongestCommonPrefic$IsValidNum$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/InterviewBit/strings/LongestCommonPrefic$IsValidNum$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/InterviewBit/strings/LongestCommonPrefic$IsValidNum$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/InterviewBit/strings/LongestCommonPrefic$IsValidNum$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/InterviewBit/strings/LongestCommonPrefic$IsValidNum$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/InterviewBit/strings/LongestCommonPrefic$IsValidNum$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/InterviewBit/strings/LongestCommonPrefic$IsValidNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/InterviewBit/strings/LongestCommonPrefic$IsValidNum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/InterviewBit/strings/LongestCommonPrefic$WordPair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/InterviewBit/strings/LongestCommonPrefic$WordPair.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/META-INF/Practise.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/algorithms/DFSNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/algorithms/DFSNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/algorithms/KMP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/algorithms/KMP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/algorithms/KnapSack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/algorithms/KnapSack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/algorithms/KnapSackItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/algorithms/KnapSackItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/algorithms/graphs/FillColor$Cordinate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/algorithms/graphs/FillColor$Cordinate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/algorithms/graphs/FillColor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/algorithms/graphs/FillColor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/algorithms/graphs/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/algorithms/graphs/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/algorithms/graphs/UniquePaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/algorithms/graphs/UniquePaths.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/designpatterns/decorator/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/designpatterns/decorator/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/java_stuff/GCTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/java_stuff/GCTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/java_stuff/StreamsOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/java_stuff/StreamsOne.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/java_stuff/T.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/java_stuff/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/java_stuff/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/misc/Unicodes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/misc/Unicodes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/multi_threading/ProducerConsumer$PC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/multi_threading/ProducerConsumer$PC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/problem_solving/EvenOddIndexSort$IndexPack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/problem_solving/EvenOddIndexSort$IndexPack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/problem_solving/EvenOddIndexSort$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/problem_solving/EvenOddIndexSort$Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/problem_solving/EvenOddIndexSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/problem_solving/EvenOddIndexSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/problem_solving/MergeIntervals$Interval.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/problem_solving/MergeIntervals$Interval.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/problem_solving/MergeIntervals.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/problem_solving/MergeIntervals.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/problem_solving/Strings/LargestNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/problem_solving/Strings/LargestNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Practise/sorting/Comparisons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practise/sorting/Comparisons.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InterviewBit/strings/JustifyText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InterviewBit/strings/JustifyText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InterviewBit/strings/LongestCommonPrefic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InterviewBit/strings/LongestCommonPrefic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/IslandSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/IslandSize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/KMP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/KMP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/KnapSack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/KnapSack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/NumberIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/NumberIslands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/graphs/FillColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/graphs/FillColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/graphs/UniquePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/graphs/UniquePaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastructures/LinkedListApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructures/LinkedListApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java_stuff/GCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_stuff/GCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java_stuff/StreamsOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_stuff/StreamsOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java_stuff/T.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_stuff/Language.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/misc/Unicodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/misc/Unicodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/multi_threading/ProducerConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/multi_threading/ProducerConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem_solving/CoinChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem_solving/CoinChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem_solving/EvenOddIndexSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem_solving/EvenOddIndexSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem_solving/MergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem_solving/MergeIntervals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problem_solving/Strings/LargestNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem_solving/Strings/LargestNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sorting/Comparisons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Comparisons.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,36 +37,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interviews/amazon/SerialiseDeserBtree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interviews/amazon/TrappingRainWater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interviews/amazon/AlienDictionary.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-188">
-              <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/interviews/amazon/MergeKSortedList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -150,7 +64,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/interviews/amazon/DesignFileSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-437">
+            <state relative-caret-position="41">
               <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -161,32 +75,56 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sorting/Cat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sorting/CatComparisons.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/primitives/DataTypes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/primitives/DataTypesTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/primitives/EndianNess.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/interviews/facebook.java">
+        <entry file="file://$PROJECT_DIR$/src/primitives/Parity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interviews/amazon/ReorgString.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-113">
-              <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Stack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -250,7 +188,37 @@
               <item name="Practise" type="b2602c69:ProjectViewProjectNode" />
               <item name="Practise" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="interviews" type="462c0819:PsiDirectoryNode" />
+              <item name="arrays" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Practise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Practise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Practise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Practise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="decorator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Practise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Practise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="strings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Practise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Practise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="primitives" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Practise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Practise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sorting" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1068,7 +1036,7 @@
       <workItem from="1589270582317" duration="560000" />
       <workItem from="1589338057572" duration="177000" />
       <workItem from="1589447883108" duration="531000" />
-      <workItem from="1589449984672" duration="8471000" />
+      <workItem from="1589449984672" duration="9259000" />
     </task>
     <servers />
   </component>
@@ -1090,7 +1058,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9179000" />
+    <option name="totallyTimeSpent" value="9967000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1104,7 +1072,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1122,7 +1090,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32142857" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.46938777" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -4438,9 +4406,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/interviews/facebook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/interviews/amazon/DesignFileSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-437">
+        <state relative-caret-position="41">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -4450,10 +4425,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interviews/facebook.java">
+    <entry file="file://$PROJECT_DIR$/src/sorting/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sorting/CatComparisons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/DataTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/DataTypesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/EndianNess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/primitives/Parity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/arrays/MinSwaps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
