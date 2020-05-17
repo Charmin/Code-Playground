@@ -1,5 +1,7 @@
 package misc;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
@@ -27,13 +29,28 @@ public class Unicodes {
         //String s = "Voltegic ?...";
         //String s = "Voltegic \ufffd...";
         String s = "Voltegic ���...";
-        //String n = "";
-        System.out.println(s);
-        byte[] b = s.getBytes("UTF8");
-        String i = new String(b, "US-ASCII");
+
+        String s1 = "Super very gud camera\n" +
+                "Super Battery\n" +
+                "Super Display over all super \n" +
+                "Valuable money \uD83D\uDC96\uD83D\uDC96\uD83D\uDC96";
+
+         int len = s1.length();
+        //U+D800 through U+DB7F
+        //Highlight indices : 0,49
+
+        //int end = index.getStart() + index.getOffset();
+        String text = "Super very gud camera Super Battery Super Display over all super Valuable money 💖💖💖";
+        if (text != null && text.length() >= 84) {
+            s1 = new String(s1.getBytes(Charset.forName("UTF-16")), Charset.forName("UTF-16"));
+            String p = s1.substring(0,84);
+            String p1 = new String(p.getBytes(Charset.forName("UTF-16")), Charset.forName("UTF-16"));
+            System.out.println(p1);
+        }
+
+
         //b = s.getBytes("US-ASCII");
         //t = new String(b, "UTF8");
-        System.out.println(t);
     }
 
     public static void printBox() {

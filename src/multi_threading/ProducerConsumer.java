@@ -48,16 +48,17 @@ public class ProducerConsumer {
 
         LinkedList<Integer> buffer = new LinkedList<>();
         int capacity = 2;
+        int val = 0;
 
         public void produce() throws InterruptedException {
             while (true) {
-                int val = 0;
                 synchronized (this) {
                     while (buffer.size() == capacity) {
                         wait();
                     }
                     System.out.println("Producer produced value" + val);
-                    buffer.add(val);
+                    buffer.add(val++);
+
                     // notifies the consumer thread that
                     // now it can start consuming
                     notify();

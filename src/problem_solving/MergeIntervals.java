@@ -1,7 +1,11 @@
 package problem_solving;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * Created by chaitra.kr on 04/05/19.
@@ -51,6 +55,10 @@ public class MergeIntervals {
         intervals.sort((Interval a, Interval b) -> {
             return (a.start - b.start);
         });
+        new ArrayList<Integer>(){{add(1); add(2);}};
+
+        Map<Integer, List<Integer>> indexMap = new HashMap<>();
+        indexMap.get(2).sort((o1, o2) -> o1 - o2);
 
         ArrayList<Interval> result = new ArrayList<>();
 

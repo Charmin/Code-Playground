@@ -8,8 +8,6 @@ import java.util.List;
  * Created by chaitra.kr on 10/03/19.
  */
 public class UniquePaths {
-
-
     public static void main(String[] args) {
         //int p = uniquePaths(3,2);
         //System.out.println(p);

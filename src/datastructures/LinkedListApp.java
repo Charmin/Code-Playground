@@ -48,7 +48,7 @@ public class LinkedListApp {
     public static int numIslands(char[][] grid) {
         boolean[][] visited = new boolean[grid.length][grid[0].length];
         int regions = 0;
-        int[][] direction = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+        int[][] direction = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}}; //right left up down
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[i].length; j++) {
                 if (grid[i][j] == 1) {

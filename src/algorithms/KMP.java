@@ -68,8 +68,10 @@ import java.util.Map;
 public class KMP {
 
     public static void main(String[] args) {
-        String h = "misissippi";
-        String e = "is";
+        //String h = "misissippi";
+        //String e = "is";
+        String h = "ababababab";
+        String e = "abab";
         int res = strStr(h, e);
         System.out.println(res);
     }

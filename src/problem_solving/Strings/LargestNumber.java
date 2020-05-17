@@ -107,4 +107,39 @@ public class LargestNumber {
         return res;
     }
 
+    public List<String> summaryRanges(int[] nums) {
+        int i = 0;
+        int j = i+1;
+        List<String> result = new ArrayList<>();
+
+        int n = nums.length;
+        if (n == 0) {
+            return result;
+        }
+
+        if (n == 1) {
+            return Collections.singletonList(String.valueOf(nums[i]));
+        }
+
+        StringBuilder summary = new StringBuilder();
+        while (j < n) {
+            if ((nums[j] - nums[i]) == 1) {
+                summary.append(nums[i]).append("->").append(nums[j]);
+                j++;
+            } else {
+                summary.append(String.valueOf(nums[i]));
+                result.add(summary.toString());
+                summary.setLength(0);
+                j++;
+                i = j;
+            }
+        }
+
+        if (summary.length() > 0) {
+            result.add(summary.toString());
+        }
+
+        return result;
+    }
+
 }

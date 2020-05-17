@@ -11,9 +11,45 @@ import java.util.List;
 public class EvenOddIndexSort {
 
     public static void main(String[] args) {
-        int A[] = {4,2,5,7};
+        int A[] = {4, 2, 5, 7};
         int B[] = sortArrayByParityII(A);
+        int res = hammingDistance(1, 4);
+        System.out.println("Hamming" + res);
         Arrays.stream(B).forEach(e -> System.out.println(e));
+    }
+
+    public static int hammingDistance(int x, int y) {
+        if (x == y) {
+            return 0;
+        }
+        int count = 0;
+        while (x > 0 && y > 0) {
+            int m = x & 1;
+            int n = y & 1;
+            if ((m & n) == 0) {
+                count++;
+            }
+            x = x >> 1;
+            y = y >> 1;
+        }
+
+        if (x > 0) {
+            count += countOnes(x);
+        }
+
+        if (y > 0) {
+            count += countOnes(y);
+        }
+        return count;
+    }
+
+    private static int countOnes(int x) {
+        int c = 0;
+        while (x > 0) {
+            c = ((x & 1) == 1) ? c+1 : c;
+            x = x >> 1;
+        }
+        return c;
     }
 
     public static int[] sortArrayByParityII(int[] A) {
@@ -79,7 +115,7 @@ public class EvenOddIndexSort {
             int open = 0;
             int close = 0;
             int total = 0;
-            for (int i =0;i< S.length();i++) {
+            for (int i = 0; i < S.length(); i++) {
                 char c = S.charAt(i);
                 if (c == '(') {
                     open++;

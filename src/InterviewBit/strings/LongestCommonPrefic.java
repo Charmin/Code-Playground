@@ -13,9 +13,6 @@ public class LongestCommonPrefic {
     class WordPair {
         String a;
         String b;
-
-
-
         public WordPair(String a, String b) {
             this.a = a;
             this.b = b;
@@ -63,71 +60,6 @@ public class LongestCommonPrefic {
             countMap.put('.',1);
             countMap.put('e',1);
 
-            nextMap.put('+', new HashSet(){{
-                add('0');
-                add('1');
-                add('2');
-                add('3');
-                add('4');
-                add('5');
-                add('6');
-                add('7');
-                add('8');
-                add('9');
-            }});
-
-            nextMap.put('-', new HashSet(){{
-                add('0');
-                add('1');
-                add('2');
-                add('3');
-                add('4');
-                add('5');
-                add('6');
-                add('7');
-                add('8');
-                add('9');
-            }});
-
-            nextMap.put('.', new HashSet(){{
-                add('0');
-                add('1');
-                add('2');
-                add('3');
-                add('4');
-                add('5');
-                add('6');
-                add('7');
-                add('8');
-                add('9');
-            }});
-
-            nextMap.put('e', new HashSet(){{add('0');
-                add('1');
-                add('2');
-                add('3');
-                add('4');
-                add('5');
-                add('6');
-                add('7');
-                add('8');
-                add('9');
-                add('+');
-                add('-');
-            }});
-
-            nextMap.put('+', new HashSet(){{
-                add('0');
-                add('1');
-                add('2');
-                add('3');
-                add('4');
-                add('5');
-                add('6');
-                add('7');
-                add('8');
-                add('9');
-            }});
 
             for (int i = 0; i < 10; i++) {
                 char c = (char) ('.'+48);

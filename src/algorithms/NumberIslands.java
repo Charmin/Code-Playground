@@ -69,7 +69,6 @@ public class NumberIslands {
 }
 
 class DFSNode {
-
     int value;
     boolean visited;
     int neighboursCount;

@@ -13,34 +13,7 @@ public class KnapSack {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-//        int noOfTestCases = Integer.parseInt(scanner.nextLine());
-//
-//        for (int l = 0; l < noOfTestCases; l++) {
-//
-//            int noOfItems = Integer.parseInt(scanner.next());
-//            int maxWeight = Integer.parseInt(scanner.next());
-//            List<Integer> values = new ArrayList<>();
-//            List<Integer> weights = new ArrayList<>();
-//            List<KnapSackItem> items = new ArrayList<>();
-//
-//            for (int i = 0; i < noOfItems; i++) {
-//                int n = scanner.nextInt();
-//                values.add(n);
-//            }
-//
-//            scanner.nextLine();
-//            for (int j = 0; j < noOfItems; j++) {
-//                weights.add(scanner.nextInt());
-//            }
-//
-//            for (int k = 0; k < noOfItems; k++) {
-//                KnapSackItem knapSack = new KnapSackItem(values.get(k), weights.get(k));
-//                items.add(knapSack);
-//            }
-//
-//            int maxVal = solveKnapSack(maxWeight, items, 0);
-//            System.out.println(maxVal);
-//        }
+
 
         List<KnapSackItem> items = new ArrayList<>();
         items.add(new KnapSackItem(10, 5));

@@ -7,8 +7,6 @@ import java.util.Set;
  * Created by chaitra.kr on 17/11/18.
  */
 public class FillColor {
-
-
     static int ROW_MAX = 0;
     static int COL_MAX = 0;
     static int MIN = 0;

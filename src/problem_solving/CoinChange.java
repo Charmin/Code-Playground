@@ -138,26 +138,26 @@ public class CoinChange {
     * */
 
     public static long getWaysCoins(List<Long> c, int i, long n, Map<String, Long> memo) {
-        if (n == 0) {
-            return 1;
-        }
+            if (n == 0) {
+                return 1;
+            }
 
-        if (i < 0 | n < 0) {
-            return 0;
-        }
+            if (i < 0 | n < 0) {
+                return 0;
+            }
 
-        String key = i + "|" + n;
-        //String key = String.valueOf(n);
+            String key = i + "|" + n;
+            //String key = String.valueOf(n);
 
-        if (!memo.containsKey(key)) {
-            long withCoin = getWaysCoins(c, i, n - c.get(i), memo);
-            long withOutCoin = getWaysCoins(c, i - 1, n, memo);
+            if (!memo.containsKey(key)) {
+                long withCoin = getWaysCoins(c, i, n - c.get(i), memo);
+                long withOutCoin = getWaysCoins(c, i - 1, n, memo);
 
-            long ways = withCoin + withOutCoin;
-            memo.put(key, ways);
-        }
+                long ways = withCoin + withOutCoin;
+                memo.put(key, ways);
+            }
 
-        return memo.get(key);
+            return memo.get(key);
     }
 
 

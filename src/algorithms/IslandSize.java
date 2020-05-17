@@ -7,7 +7,7 @@ import java.util.Set;
 /**
  * Created by chaitra.kr on 08/03/19.
  */
-public class IslandSize {
+public class                                                                                                                                                                                                                                                                                                                                                                                                                               IslandSize {
 
 
     public static void main(String[] args) {

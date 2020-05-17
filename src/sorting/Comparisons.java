@@ -1,6 +1,7 @@
 package sorting;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Created by chaitra.kr on 01/05/16.
@@ -20,7 +21,6 @@ public class Comparisons {
         Set<Integer> rotations = getRotations(p, size);
         System.out.println("No of rotations: " + rotations.size());
         rotations.stream().forEach(r -> System.out.println(r));
-
     }
 
     private static Set<Integer> getRotations(int p, int size) {
@@ -32,7 +32,7 @@ public class Comparisons {
             r = (int) (r * (Math.pow(10, size - 1)));
             p = r + q;
             if (p > original)
-            rotations.add(p);
+                rotations.add(p);
         } while (p != original);
         return rotations;
     }
