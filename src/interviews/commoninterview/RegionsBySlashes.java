@@ -87,7 +87,9 @@ class DSU {
         if (parent[a] == a) {
             return a;
         }
-        return find(parent[a]);
+        int p = find(parent[a]);
+        parent[a] = p;
+        return p;
     }
 }
 

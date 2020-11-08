@@ -31,6 +31,7 @@ public class MinCostToRepairEdge {
 
     private static int getMinCost(int[][] edges, int[][] repairs, int n) {
 
+        //sorted by cost
         PriorityQueue<int[]> edgesP = new PriorityQueue<>(Comparator.comparing(a -> a[2]));
         Map<String, Integer> graph = new HashMap<>();
         UnionFind uf = new UnionFind(n);
@@ -43,14 +44,14 @@ public class MinCostToRepairEdge {
         }
 
         for (int[] r : repairs) {
-            graph.put(r[0] + "-" + r[1], r[2]);
+            graph.put(r[0] + "-" + r[1], r[2]); //update the repair cost
             edgesP.offer(r);
         }
 
         //Make a union of all the connected(unbroken) edges so far
         for (Map.Entry<String, Integer> mp : graph.entrySet()) {
             if (mp.getValue() == 0) {
-                int v1 = Integer.valueOf(mp.getKey().split("-")[0]);
+                int v1    = Integer.valueOf(mp.getKey().split("-")[0]);
                 int v2 = Integer.valueOf(mp.getKey().split("-")[1]);
                 uf.union(v1, v2);
             }

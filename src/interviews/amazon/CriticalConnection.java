@@ -36,6 +36,7 @@ public class CriticalConnection {
             return crit;
         }
 
+        //Initially everybody's low link value is 0;
         Map<Integer, BNode> map = new HashMap<>();
         for (int i = 0; i < n; i++) {
             map.put(i, new BNode(0, 0, i));
@@ -59,6 +60,7 @@ public class CriticalConnection {
     }
 
     private static void tarjanDfs(Map<Integer, List<Integer>> adj, Set<Integer> visited, Map<Integer, BNode> map, int v, int parent, List<List<Integer>> res) {
+        //v is our node
         BNode nv = map.get(v);
         nv.lowLink = nv.id;
         for (Integer n : adj.get(v)) {
@@ -66,9 +68,9 @@ public class CriticalConnection {
             if (!visited.contains(n)) {
                 visited.add(n);
                 BNode nn = map.get(n);
-                nn.id = nv.id + 1;
+                nn.id = nv.id + 1; //time
                 map.put(n, nn);
-                tarjanDfs(adj, visited, map, n,v, res);
+                tarjanDfs(adj, visited, map, n, v, res); //child, parent
                 nv.lowLink = Math.min(nv.lowLink, map.get(n).lowLink);  //Backtracking stage, where the low link is propagated
                 map.put(v, nv);
                 if (nv.id < map.get(n).lowLink) {
@@ -76,7 +78,7 @@ public class CriticalConnection {
                 }
             } else {
                 nv.lowLink = Math.min(nv.lowLink, map.get(n).id);     // Already visited node, hence the update the lowlink to the min
-                                                                      // of id of the visited node
+                // of id of the visited node
                 map.put(v, nv);
 
 

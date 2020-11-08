@@ -1,15 +1,19 @@
 package InterviewBit.strings;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class LongestCommonPrefic {
 
     public static void main(String[] args) {
         String a = null;
+        int i=2;
+        char c = (char)('a'+i);
+        char[] ca = {'2', 'a'};
+
+        System.out.println(String.valueOf(ca));
     }
+
+
     class WordPair {
         String a;
         String b;

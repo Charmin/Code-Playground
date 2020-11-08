@@ -1,5 +1,9 @@
 package problem_solving;
 
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,10 +12,13 @@ import java.util.List;
  */
 public class AllSumComb {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         List<Integer> output = new ArrayList<>();
         print_all_sum_iter(4, 0, 1, output, new ArrayList<Integer>());
         System.out.println(output);
+
+        List<String> data = Files.readAllLines(Paths.get("/etc/wishlist/config/merged_user_coll_fdp_ch.csv"), StandardCharsets.UTF_8);
+        System.out.println(data.get(0));
     }
 
     static void print_all_sum_rec(

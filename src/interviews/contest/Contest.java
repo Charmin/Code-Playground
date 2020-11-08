@@ -10,7 +10,11 @@ public class Contest {
     public static void main(String[] args) {
         int[][] mat = {{56216}, {63251}, {75772}, {1945}, {27014}};
         List<Integer> luck = luckyNumbers(mat);
-        System.out.println("done");
+        //System.out.println("done");
+        String c = "xy";
+        System.out.println(c.substring(1));
+        System.out.println("er*/et".substring(0,0).isEmpty());
+        System.out.println((int) Math.ceil((double) 88 / 26));
         CustomStack obj = new CustomStack(3);
         obj.push(2);
         obj.push(4);
@@ -18,7 +22,7 @@ public class Contest {
         obj.push(5);
         int param_2 = obj.pop();
         obj.increment(3,100);
-        System.out.println();
+        //System.out.println();
     }
 
     public static List<Integer> luckyNumbers(int[][] matrix) {

@@ -27,8 +27,7 @@ public class DesignFileSystem {
                 if (t.files.containsKey(d[d.length - 1])) {
                     files.add(d[d.length - 1]);
                     return files;
-                } else {
-                    t = t.dirs.get(d[d.length - 1]);
+                } else { t = t.dirs.get(d[d.length - 1]);
                 }
             }
             files.addAll(new ArrayList < > (t.dirs.keySet()));
