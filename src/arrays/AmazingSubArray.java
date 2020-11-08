@@ -1,4 +1,4 @@
-package InterviewBit.strings;
+package arrays;
 
 public class AmazingSubArray {
 

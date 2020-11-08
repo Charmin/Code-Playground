@@ -1,4 +1,4 @@
-package InterviewBit.strings;
+package arrays;
 
 import java.util.Arrays;
 import java.util.HashSet;
