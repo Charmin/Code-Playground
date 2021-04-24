@@ -1,6 +1,5 @@
 package algorithms;
 
-import javafx.util.Pair;
 
 import java.util.*;
 import java.util.stream.IntStream;
@@ -79,9 +78,9 @@ public class Prims {
 //        int weights = 0;
 //        Map<Integer, Map<Integer, Integer>> mst = primsMST(1, graphN, visitedMap);
 //        for (Map.Entry<Integer, Map<Integer, Integer>> entry : mst.entrySet()) {
-//            for (Map.Entry<Integer, Integer> en : entry.getValue().entrySet()) {
-//                System.out.println(entry.getKey() + " ==> " + en.getKey() + "-" + en.getValue());
-//                weights += en.getValue();
+//            for (Map.Entry<Integer, Integer> en : entry.getSecond().entrySet()) {
+//                System.out.println(entry.getFirst() + " ==> " + en.getFirst() + "-" + en.getSecond());
+//                weights += en.getSecond();
 //            }
 //        }
 //        System.out.println("Total weights : " + weights);
@@ -122,14 +121,14 @@ public class Prims {
         boolean allVisited = false;
 
         while (!allVisited) {
-            Pair<Integer, Pair<Integer, Integer>> edgePair = getMinimumUnvisited(initMst, visitedMap);
+            IceCreamParlour.Pair<Integer, IceCreamParlour.Pair<Integer, Integer>> edgePair = getMinimumUnvisited(initMst, visitedMap);
             if (edgePair != null) {
                 Map<Integer, Integer> weightMap = new HashMap<>();
-                weightMap.put(edgePair.getValue().getKey(), edgePair.getValue().getValue());
-                mst.computeIfAbsent(edgePair.getKey(), m -> new HashMap<>()).put(edgePair.getValue().getKey(), edgePair.getValue().getValue());
-                visitedMap.put(edgePair.getValue().getKey(), true);
-                Map<Integer, Integer> newCandidates = graphN.getAdjMap().get(edgePair.getValue().getKey()); //put all its neighbours
-                initMst.put(edgePair.getValue().getKey(), newCandidates);
+                weightMap.put(edgePair.getSecond().getFirst(), edgePair.getSecond().getSecond());
+                mst.computeIfAbsent(edgePair.getFirst(), m -> new HashMap<>()).put(edgePair.getSecond().getFirst(), edgePair.getSecond().getSecond());
+                visitedMap.put(edgePair.getSecond().getFirst(), true);
+                Map<Integer, Integer> newCandidates = graphN.getAdjMap().get(edgePair.getSecond().getFirst()); //put all its neighbours
+                initMst.put(edgePair.getSecond().getFirst(), newCandidates);
             }
             Optional<Boolean> notVisited = visitedMap.values().stream().filter(k -> k == false).findAny();
             if (!notVisited.isPresent()) {
@@ -139,17 +138,17 @@ public class Prims {
         return mst;
     }
 
-    private static Pair<Integer, Pair<Integer, Integer>> getMinimumUnvisited(Map<Integer, Map<Integer, Integer>> candidates, Map<Integer, Boolean> visitedMap) {
+    private static IceCreamParlour.Pair<Integer, IceCreamParlour.Pair<Integer, Integer>> getMinimumUnvisited(Map<Integer, Map<Integer, Integer>> candidates, Map<Integer, Boolean> visitedMap) {
         int min = Integer.MAX_VALUE;
-        Pair<Integer, Pair<Integer, Integer>> edge = null;
-        Pair<Integer, Integer> edgeWait;
+        IceCreamParlour.Pair<Integer, IceCreamParlour.Pair<Integer, Integer>> edge = null;
+        IceCreamParlour.Pair<Integer, Integer> edgeWait;
         for (Map.Entry<Integer, Map<Integer, Integer>> entry : candidates.entrySet()) {
             for (Map.Entry<Integer, Integer> entry1 : entry.getValue().entrySet()) {
                 if (!visitedMap.get(entry1.getKey())) {
                     if (entry1.getValue() < min) {
                         min = entry1.getValue();
-                        edgeWait = new Pair<>(entry1.getKey(), entry1.getValue());
-                        edge = new Pair<>(entry.getKey(), edgeWait);
+                        edgeWait = new IceCreamParlour.Pair<>(entry1.getKey(), entry1.getValue());
+                        edge = new IceCreamParlour.Pair<>(entry.getKey(), edgeWait);
                     }
                 }
             }

@@ -1,7 +1,8 @@
 package problem_solving;
 
-import javafx.util.Pair;
 
+
+import algorithms.IceCreamParlour;
 
 import java.io.IOException;
 import java.util.*;
@@ -28,19 +29,19 @@ public class RecyclePairs {
     private static long processMap(Map<Long, List<Inputs>> sizedInputMap) {
         long pairsCount = 0;
         for (Map.Entry<Long, List<Inputs>> entry : sizedInputMap.entrySet()) {
-            Set<Pair<Long, Long>> pairs = processInputs(entry.getKey(), entry.getValue());
+            Set<IceCreamParlour.Pair<Long, Long>> pairs = processInputs(entry.getKey(), entry.getValue());
             pairsCount = pairsCount + pairs.size();
         }
         return pairsCount;
     }
 
-    private static Set<Pair<Long, Long>> processInputs(Long size, List<Inputs> values) {
+    private static Set<IceCreamParlour.Pair<Long, Long>> processInputs(Long size, List<Inputs> values) {
         //Map<Long, problem_solving.Inputs> intSet = values.stream().collect(Collectors.toMap(i -> i.getValue(), i -> i));
         Map<Long, Inputs> intSet = new HashMap<>();
         for(Inputs input : values) {
             intSet.put(input.getValue(), input);
         }
-        Set<Pair<Long, Long>> pairIns = new HashSet<>();
+        Set<IceCreamParlour.Pair<Long, Long>> pairIns = new HashSet<>();
         Set<Long> rotations;
         for (Inputs input : values) {
             if (input.getRightHighRotations().isEmpty()) {
@@ -51,7 +52,7 @@ public class RecyclePairs {
             }
             for (Long rotation : rotations) {
                 if (intSet.containsKey(rotation)) {
-                    Pair<Long, Long> pair = new Pair<>(input.getValue(), intSet.get(rotation).getValue());
+                    IceCreamParlour.Pair<Long, Long> pair = new IceCreamParlour.Pair<>(input.getValue(), intSet.get(rotation).getValue());
                     pairIns.add(pair);
                     populateRotations(intSet.get(rotation), rotations);
                 }

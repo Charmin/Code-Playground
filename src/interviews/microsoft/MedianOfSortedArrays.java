@@ -1,7 +1,5 @@
 package interviews.microsoft;
 
-import javafx.util.Pair;
-
 public class MedianOfSortedArrays {
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {

@@ -1,6 +1,7 @@
 package algorithms.graphs;
 
-import javafx.util.Pair;
+
+import algorithms.IceCreamParlour;
 
 import java.util.*;
 
@@ -30,34 +31,34 @@ public class WordLadder {
                     }
                 }
         );
-        Queue<Pair<String, Integer>> Q = new LinkedList<>();
+        Queue<IceCreamParlour.Pair<String, Integer>> Q = new LinkedList<>();
         Map<String, Boolean> visited = new HashMap<>();
         return BFS(start, end, allComb, Q, visited);
     }
 
-    private static int BFS(String start, String end, Map<String, List<String>> allComb, Queue<Pair<String, Integer>> q, Map<String, Boolean> visited) {
+    private static int BFS(String start, String end, Map<String, List<String>> allComb, Queue<IceCreamParlour.Pair<String, Integer>> q, Map<String, Boolean> visited) {
         int len = start.length();
         List<List<String>> results = new ArrayList<>();
         LinkedList<String> result = new LinkedList<>();
-        q.add(new Pair<>(start, 1));
+        q.add(new IceCreamParlour.Pair<String, Integer>(start, 1));
         visited.put(start, true);
         while (!q.isEmpty()) {
-            Pair<String, Integer> item = q.poll();
-            int level = item.getValue();
-            result.add(item.getKey());
+            IceCreamParlour.Pair<String, Integer> item = q.poll();
+            String level = item.getFirst();
+            //result.add(item.getSecond());
             for (int i = 0; i < len; i++) {
-                String newWord = item.getKey().substring(0, i) + "*" + item.getKey().substring(i + 1, len);
+                String newWord = item.getFirst().substring(0, i) + "*" + item.getFirst().substring(i + 1, len);
                 List<String> combs = allComb.get(newWord);
                 if (combs.contains(end)) {
                     List<String> s = new ArrayList<>();
                     s.addAll(result);
                     results.add(s);
                     result.clear();
-                    return level + 1;
+                    //return level + 1;
                 }
                 for (String s : combs) {
                     if (visited.get(s) == null || !visited.get(s)) {
-                        q.add(new Pair<>(s, level + 1));
+                        //q.add(new IceCreamParlour.Pair<String, Integer>(s, level + 1));
                         visited.put(s, true);
                     }
                 }

@@ -1,9 +1,7 @@
 package algorithms;
 
-import javafx.util.Pair;
 
 import java.util.*;
-import java.util.stream.IntStream;
 
 /**
  * Created by chaitra.kr on 31/12/18.
@@ -47,13 +45,13 @@ public class NearestClone {
         int minDistance = Integer.MAX_VALUE;
 
         for (Node node : graff.vertexSet) {
-           Pair<Integer, Integer> valToDistance;
+           IceCreamParlour.Pair<Integer, Integer> valToDistance;
            Set<Integer> visited = new HashSet<>();
             if (colors.get(node.val) == targetColor && !sourceToDest.values().contains(node.val)) {
                 valToDistance = getShortestPath(graff, node, visited);
-                if (valToDistance!=null && valToDistance.getValue() < minDistance) {
-                    minDistance = valToDistance.getValue();
-                    sourceToDest.put(node.val, valToDistance.getKey());
+                if (valToDistance!=null && valToDistance.getSecond() < minDistance) {
+                    minDistance = valToDistance.getSecond();
+                    sourceToDest.put(node.val, valToDistance.getFirst());
                 }
             }
         }
@@ -61,9 +59,9 @@ public class NearestClone {
         System.out.println("Min Distance " + minDistance);
     }
 
-    private static Pair<Integer, Integer> getShortestPath(Graff graff, Node startNode, Set<Integer> visited) {
+    private static IceCreamParlour.Pair<Integer, Integer> getShortestPath(Graff graff, Node startNode, Set<Integer> visited) {
         LinkedList<Node> queues = new LinkedList<>();
-        Pair<Integer,Integer> valueToDistance = null;
+        IceCreamParlour.Pair<Integer,Integer> valueToDistance = null;
         int pathLength = 1;
         int minDistance = Integer.MAX_VALUE;
         LinkedList<GEdge> neighbours = graff.adjList[startNode.val];
@@ -81,7 +79,7 @@ public class NearestClone {
             if (n.color == startNode.color && n.val != startNode.val) {
                 if (pathLength < minDistance) {
                     minDistance = pathLength;
-                    valueToDistance = new Pair(n.val, minDistance);
+                    valueToDistance = new IceCreamParlour.Pair<>(n.val, minDistance);
                 }
             }
 

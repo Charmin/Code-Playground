@@ -1,6 +1,5 @@
 package problem_solving;
 
-import javafx.util.Pair;
 
 import java.util.*;
 

@@ -1,6 +1,5 @@
 package algorithms;
 
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

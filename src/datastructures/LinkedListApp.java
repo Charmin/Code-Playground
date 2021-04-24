@@ -1,8 +1,6 @@
 package datastructures;
 
-import javafx.util.Pair;
-
-import java.util.Arrays;
+import algorithms.IceCreamParlour;
 
 /**
  * Created by chaitra.kr on 26/09/17.
@@ -62,18 +60,18 @@ public class LinkedListApp {
     }
 
     public static boolean bfs(int i, int j, char[][] grid, int[][] directions, boolean[][] visited) {
-        java.util.LinkedList<Pair<Integer, Integer>> queue = new java.util.LinkedList<>();
+        java.util.LinkedList<IceCreamParlour.Pair<Integer, Integer>> queue = new java.util.LinkedList<>();
         if (!visited[i][j]) {
-            queue.add(new Pair(i, j));
+            queue.add(new IceCreamParlour.Pair(i, j));
             visited[i][j] = true;
             while (!queue.isEmpty()) {
-                Pair<Integer, Integer> cur = queue.poll();
+                IceCreamParlour.Pair<Integer, Integer> cur = queue.poll();
                 for (int k = 0; k < 4; k++) {
-                    int m = cur.getKey() + directions[k][0];
-                    int n = cur.getValue() + directions[k][1];
+                    int m = cur.getFirst() + directions[k][0];
+                    int n = cur.getSecond() + directions[k][1];
                     if (m >= 0 && n >= 0 && m < grid.length && n < grid[0].length) {
                         if (!visited[m][n] && grid[m][n] == 1) {
-                            queue.add(new Pair(m, n));
+                            queue.add(new IceCreamParlour.Pair(m, n));
                             visited[m][n] = true;
                         }
                     }
@@ -115,11 +113,11 @@ public class LinkedListApp {
     }
 
     private static void DFS(int i, int j, int[][] grid, int[][] dir, boolean[][] visited) {
-        Pair<Integer, Integer> cur = new Pair(i, j);
+        IceCreamParlour.Pair<Integer, Integer> cur = new IceCreamParlour.Pair(i, j);
         visited[i][j] = true;
         for (int k = 0; k < 8; k++) {
-            int m = cur.getKey() + dir[k][0];
-            int n = cur.getValue() + dir[k][1];
+            int m = cur.getFirst() + dir[k][0];
+            int n = cur.getSecond() + dir[k][1];
             if (m < grid.length && m >=0 && n < grid[0].length && n >=0) {
                 if (!visited[m][n] && grid[m][n] == 1) {
                     visited[m][n] = true;
